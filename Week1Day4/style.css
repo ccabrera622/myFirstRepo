@@ -1,0 +1,62 @@
+body
+{
+    background-color:#57068c;
+}
+
+.part1
+{
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.part2
+{
+    height: 600px;
+    width: 100%;
+    background-color: #fff;
+    background-image: url("../Week1Day4/img1.png");
+    background-size: cover;
+    
+}
+
+
+.part3
+{
+    height: 150px;
+    width: 100%;
+    background-color: #000; 
+}
+
+.buttonContainer
+{
+    height: 50%;
+    width: 100%;
+    background-color: #000;
+    text-align: center; 
+    color: #fff;
+}
+
+.button
+{
+    padding-top: 1%;
+    height: 67%;
+    width: 24%;
+    display: inline-block;
+    background-color: #000;
+}
+
+.footerContainer
+{
+    width: 100%;
+    text-align: center;
+    padding-top: 7%;
+}
+
+.linked
+{
+    display: inline-block;
+    color: white;
+    width: 10%;
+    font-size: 10px;
+}
