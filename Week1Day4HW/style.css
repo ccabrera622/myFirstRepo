@@ -1,0 +1,96 @@
+.button {
+    border-radius: 25px;
+    border: 2px solid #8d8d8d;
+    padding: 20px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: 150%;
+    color: #ffbb00;
+  }
+
+  .headBar
+  {
+      width: 100%;
+      height: 60px;
+      background-color: #000;
+  }
+
+  .logo
+  {
+    float:left;
+    width: 45px;
+    height: 40px;
+    background-color: #f00;
+    padding: 10px;
+    text-align: center;
+    font-size: 150%;
+    color: #fff;
+  }
+
+  .buttonContainer
+  {
+    float:left;
+    width: 500px;
+    height: 60px;
+    background-color: #000;
+
+  }
+  .topButton
+  {
+    padding-top: 4%;
+    height: 65%;
+    width: 24%;
+    display: inline-block;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+  }
+
+  .searchBar
+  {
+    margin: 15px 0px 15px 10px;
+    float:left;
+    width: 200px;
+    height: 50%;
+    background-color: #fff;
+
+  }
+
+  .searchButton
+  {
+    margin: 15px 0px 15px 0px;
+    float:left;
+    width: 30px;
+    height: 50%;
+    background-color: #f00;
+    background-image: url("SearchImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+  }
+
+  .rightSide
+  {
+    float:right;
+    width: 250px;
+    height: 40px;
+    background-color:#000;
+    padding: 10px;
+    text-align: right;
+    font-size: 100%;
+    color: #fff;
+  }
+
+  .cartPic
+  {
+    float:right;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    background-image: url("cartImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
