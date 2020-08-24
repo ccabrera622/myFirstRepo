@@ -1,0 +1,20 @@
+body
+{
+    background-color: aqua;
+}
+
+.contentBox
+{
+    background-color: rgb(173, 255, 255);
+}
+
+.profilePic
+{
+    margin: auto;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    background-image: url("ProfilePic.jpg");
+    background-size: cover;
+}
