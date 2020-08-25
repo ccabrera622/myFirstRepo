@@ -1,0 +1,106 @@
+body
+{
+    color: #fff;
+}
+.logo
+{
+    height: 60px;
+
+}
+
+.nav-item
+{
+    color: #fff;
+}
+
+.part1
+{
+    width: 100%;
+    height: 750px;
+    background-image: url("images/PalmTrees.jfif");
+    background-size: cover;
+}
+
+.missionStatement h3
+{
+    font-size: 300%;
+    line-height: 1.6;
+    
+}
+
+.logoRibbon
+{
+    width: 100%;
+    height: 140px;
+    background-image: url("images/LogoBar.png");
+    background-size: cover;
+
+}
+
+.divisionBar
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(253, 227, 227);
+    color: #000;
+    text-align: center;
+
+}
+
+.reviewBar
+{
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+}
+
+.contactBar
+{
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(45deg, rgb(22, 179, 252), rgb(121, 85, 82));
+    padding-top: 2%;
+    padding-left: 10%;
+
+}
+
+.footBar
+{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(66, 66, 66);  
+}
+
+.divisionSection
+{
+    padding-top: 5%;
+}
+.reviewSection
+{
+    padding-top: 5%;
+    color: #000;
+    
+}
+
+.reviewSection h5
+{
+    line-height: 2.0;
+}
+
+.footSection
+{ 
+    padding-top: 5%;
+    color: #fff;
+    line-height: 3.0;
+
+}
+
+.footLogo
+{
+    height: 80px;
+}
+
+.whistleLogo
+{
+    height: 30px;
+}
