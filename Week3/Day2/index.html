@@ -1,0 +1,30 @@
+	
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A Page with JS</title>
+  </head>
+  <body>
+    <h1 id="greeting"> Hi! </h1>
+   
+    <script type="text/javascript" src="javascript/main.js"></script>
+
+    <p id="example">Lorem ipsum dolor sit amet <br> Yes, this is a random paragraph </p>
+    <button type="button" onclick="modifyColor()">Click Me</button>
+    <script>
+    function modifyColor() {
+        if(document.getElementById("example").style.color == "aqua")
+        {
+            document.getElementById("example").style.color = "red";
+        }
+        else
+        {
+            document.getElementById("example").style.color = "aqua";
+        }
+        
+        document.getElementById("example").style.backgroundColor = "gray";
+    }
+    </script>
+  </body>
+</html>
