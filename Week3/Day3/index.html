@@ -1,0 +1,38 @@
+	
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('#myButton').on('click', function(event){
+    //Update button html
+    $(this).html("button clicked");
+
+    //Create a new element
+    var newEl = '<a>look at me!</a>';
+
+    //Append new element
+    $('#someOtherElement').append(newEl);
+
+    //Add an attribute
+    $('#someOtherElement').append(newEl).attr({'href' : 'http://techtalentsouth.com'})
+
+    //Remove it
+    newEl.remove();
+
+    })
+});
+</script>
+</head>
+<body>
+    <div id="firstDiv">
+        <button id="myButton" name="button">Click ME</button>
+    </div>
+    <div id="someOtherElement">
+        <h3>hello world</h3>
+    </div>
+</body>
+</html>
