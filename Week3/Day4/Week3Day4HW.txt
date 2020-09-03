@@ -1,0 +1,96 @@
+1. SELECT * FROM tableName;
+2. SELECT columnName FROM tableName;
+   SELECT columnName1, columnName2 FROM tableName;
+3. SELECT * FROM songs WHERE (ID%2=0 AND ID>50) or (ID%2 = 1 AND ID <10);
+4.
+INSERT INTO User 
+(
+  FirstName, 
+  LastName,
+  Birthplace,
+  CreatedAt
+)
+VALUES 
+(	
+  'One', 
+  'One', 
+  'One,One',
+  CURRENT_DATE
+); 
+(	
+  '2', 
+  '2', 
+  '2,2',
+  CURRENT_DATE
+); 
+(	
+  '3', 
+  '3', 
+  '3,3',
+  CURRENT_DATE
+); 
+(	
+  '4', 
+  '4', 
+  '4,4',
+  CURRENT_DATE
+); 
+(	
+  '5', 
+  '5', 
+  '5,5',
+  CURRENT_DATE
+); 
+(	
+  '6', 
+  '6', 
+  '6,6',
+  CURRENT_DATE
+); 
+(	
+  '7', 
+  '7', 
+  '7,7',
+  CURRENT_DATE
+); 
+(	
+  '8', 
+  '8', 
+  '8,8',
+  CURRENT_DATE
+); 
+(	
+  '9', 
+  '9', 
+  '9,9',
+  CURRENT_DATE
+); 
+(	
+  '10', 
+  '10', 
+  '10,10',
+  CURRENT_DATE
+); 
+
+5.
+UPDATE User 
+SET FirstName = 'Even.',
+	LastName = 'Numbered',
+	UpdateAT = CURRENT_TIMESTAMP
+WHERE UserID%2 = 0
+
+6.
+BEGIN TRANSACTION;
+	DELETE FROM Users
+	SELECT * FROM Users;
+ROLLBACK;
+
+7.
+INSERT into Favorite(UseID, CreatedAt)
+SELECT UserID, CURRENT_DATE FROM User
+
+8.
+BEGIN TRANSACTION;
+	DELETE FROM Favorite WHERE (FavoriteID%2 = 1) or (FavoriteID > 8);
+	SELECT * FROM Favorite;
+ROLLBACK;
