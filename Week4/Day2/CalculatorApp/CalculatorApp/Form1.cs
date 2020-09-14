@@ -44,11 +44,13 @@ namespace CalculatorApp
         private void Form1_Load(object sender, EventArgs e)
         {
             textBoxDisplay.Text = "1234567890";
+            newNum = true;
         }
 
         private void buttonC_Click(object sender, EventArgs e)
         {         
             textBoxDisplay.Text = "";
+            newNum = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -240,6 +242,36 @@ namespace CalculatorApp
                 activated = false;
             }
             newNum = true;
+        }
+
+        private void buttonDec_Click(object sender, EventArgs e)
+        {
+            string s = textBoxDisplay.Text;
+            if (!s.Contains("."))
+            {
+                if (newNum)
+                {
+                    textBoxDisplay.Text = "0";
+                    newNum = false;
+                }
+                textBoxDisplay.Text += ".";
+
+            }
+
+        }
+
+        private void buttonNeg_Click(object sender, EventArgs e)
+        {
+            string s = textBoxDisplay.Text;
+            if (s.Contains("-"))
+            {
+                textBoxDisplay.Text = s.Substring(1);
+            }
+            else
+            {
+                textBoxDisplay.Text = "-" + textBoxDisplay.Text;
+            }
+
         }
     }
 }
