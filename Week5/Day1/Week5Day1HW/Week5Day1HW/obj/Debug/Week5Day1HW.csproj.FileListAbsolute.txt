@@ -1,0 +1,7 @@
+C:\Users\Christopher\myFirstRepo\Week5\Day1\Week5Day1HW\Week5Day1HW\bin\Debug\Week5Day1HW.exe.config
+C:\Users\Christopher\myFirstRepo\Week5\Day1\Week5Day1HW\Week5Day1HW\bin\Debug\Week5Day1HW.exe
+C:\Users\Christopher\myFirstRepo\Week5\Day1\Week5Day1HW\Week5Day1HW\bin\Debug\Week5Day1HW.pdb
+C:\Users\Christopher\myFirstRepo\Week5\Day1\Week5Day1HW\Week5Day1HW\obj\Debug\Week5Day1HW.csprojAssemblyReference.cache
+C:\Users\Christopher\myFirstRepo\Week5\Day1\Week5Day1HW\Week5Day1HW\obj\Debug\Week5Day1HW.csproj.CoreCompileInputs.cache
+C:\Users\Christopher\myFirstRepo\Week5\Day1\Week5Day1HW\Week5Day1HW\obj\Debug\Week5Day1HW.exe
+C:\Users\Christopher\myFirstRepo\Week5\Day1\Week5Day1HW\Week5Day1HW\obj\Debug\Week5Day1HW.pdb
