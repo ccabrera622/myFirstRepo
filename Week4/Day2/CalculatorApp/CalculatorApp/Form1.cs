@@ -28,13 +28,22 @@ namespace CalculatorApp
             switch (op)
             {
                 case '+':
-                    return Convert.ToString(x + y);
+                    return (x + y).ToString("G10");
                 case '-':
-                    return Convert.ToString(x - y);
+                    return (x - y).ToString("G10");
                 case 'x':
-                    return Convert.ToString(x * y);
+                    return (x * y).ToString("G10");
                 case '/':
-                    return Convert.ToString(x / y);
+                    if (y == 0)
+                    {
+                        newNum = true;
+                        activated = false;
+                        return "Error";
+                    }
+                    else
+                    {
+                        return (x / y).ToString("G10");
+                    }
                 default:
                     return "0";
                     
@@ -48,115 +57,34 @@ namespace CalculatorApp
         }
 
         private void buttonC_Click(object sender, EventArgs e)
-        {         
+        {
+            activated = false;
             textBoxDisplay.Text = "";
             newNum = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void handleNumberClick(object sender, EventArgs e)
         {
             if (newNum)
             {
                 textBoxDisplay.Text = "";
                 newNum = false;
             }
-            textBoxDisplay.Text += "1";
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (newNum)
+            if(textBoxDisplay.Text.Length < 10)
             {
-                textBoxDisplay.Text = "";
-                newNum = false;
+                Button current = (Button)sender;
+                textBoxDisplay.Text += current.Text;
             }
-            textBoxDisplay.Text += "2";
+            
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (newNum)
-            {
-                textBoxDisplay.Text = "";
-                newNum = false;
-            }
-            textBoxDisplay.Text += "3";
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (newNum)
-            {
-                textBoxDisplay.Text = "";
-                newNum = false;
-            }
-            textBoxDisplay.Text += "4";
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            if (newNum)
-            {
-                textBoxDisplay.Text = "";
-                newNum = false;
-            }
-            textBoxDisplay.Text += "5";
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            if (newNum)
-            {
-                textBoxDisplay.Text = "";
-                newNum = false;
-            }
-            textBoxDisplay.Text += "6";
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            if (newNum)
-            {
-                textBoxDisplay.Text = "";
-                newNum = false;
-            }
-            textBoxDisplay.Text += "7";
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            if (newNum)
-            {
-                textBoxDisplay.Text = "";
-                newNum = false;
-            }
-            textBoxDisplay.Text += "8";
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            if (newNum)
-            {
-                textBoxDisplay.Text = "";
-                newNum = false;
-            }
-            textBoxDisplay.Text += "9";
-        }
-
-        private void button0_Click(object sender, EventArgs e)
-        {
-            if (newNum)
-            {
-                textBoxDisplay.Text = "";
-                newNum = false;
-            }
-            textBoxDisplay.Text += "0";
-        }
-
-        private void buttonPlus_Click(object sender, EventArgs e)
+        private void operationClick(object sender, EventArgs e)
         {
             string s = textBoxDisplay.Text;
-            sign = '+';
+            if (s == "Error")
+            {
+                return;
+            }
             newNum = true;
             if (s != "" && !activated)
             {
@@ -168,77 +96,32 @@ namespace CalculatorApp
                 TWO = Convert.ToDouble(s);
                 string ans = calculate(ONE, TWO, sign);
                 textBoxDisplay.Text = ans;
-                ONE = Convert.ToDouble(ans);
+                if (ans != "Error")
+                {
+                    ONE = Convert.ToDouble(ans);
+                }
             }
-        }
-
-        private void buttonMinus_Click(object sender, EventArgs e)
-        {
-            string s = textBoxDisplay.Text;
-            sign = '-';
-            newNum = true;
-            if (s != "" && !activated)
-            {
-                ONE = Convert.ToDouble(s);
-                activated = true;
-            }
-            else if (s != "" && activated)
-            {
-                TWO = Convert.ToDouble(s);
-                string ans = calculate(ONE, TWO, sign);
-                textBoxDisplay.Text = ans;
-                ONE = Convert.ToDouble(ans);
-            }
-        }
-
-        private void buttonMulti_Click(object sender, EventArgs e)
-        {
-            string s = textBoxDisplay.Text;
-            sign = 'x';
-            newNum = true;
-            if (s != "" && !activated)
-            {
-                ONE = Convert.ToDouble(s);
-                activated = true;
-            }
-            else if (s != "" && activated)
-            {
-                TWO = Convert.ToDouble(s);
-                string ans = calculate(ONE, TWO, sign);
-                textBoxDisplay.Text = ans;
-                ONE = Convert.ToDouble(ans);
-            }
-        }
-
-        private void buttonDiv_Click(object sender, EventArgs e)
-        {
-            string s = textBoxDisplay.Text;
-            sign = '/';
-            newNum = true;
-            if (s != "" && !activated)
-            {
-                ONE = Convert.ToDouble(s);
-                activated = true;
-            }
-            else if (s != "" && activated)
-            {
-                TWO = Convert.ToDouble(s);
-                string ans = calculate(ONE, TWO, sign);
-                textBoxDisplay.Text = ans;
-                ONE = Convert.ToDouble(ans);
-            }
+            Button current = (Button)sender;
+            sign = Convert.ToChar(current.Text);
 
         }
 
         private void buttonEqu_Click(object sender, EventArgs e)
         {
             string s = textBoxDisplay.Text;
+            if (s == "Error")
+            {
+                return;
+            }
             if (s != "" && activated)
             {
                 TWO = Convert.ToDouble(s);
                 string ans = calculate(ONE, TWO, sign);
                 textBoxDisplay.Text = ans;
-                ONE = Convert.ToDouble(ans);
+                if (ans != "Error")
+                {
+                    ONE = Convert.ToDouble(ans);
+                }
                 activated = false;
             }
             newNum = true;
@@ -247,6 +130,10 @@ namespace CalculatorApp
         private void buttonDec_Click(object sender, EventArgs e)
         {
             string s = textBoxDisplay.Text;
+            if (s == "Error")
+            {
+                return;
+            }
             if (!s.Contains("."))
             {
                 if (newNum)
@@ -263,6 +150,10 @@ namespace CalculatorApp
         private void buttonNeg_Click(object sender, EventArgs e)
         {
             string s = textBoxDisplay.Text;
+            if (s == "Error")
+            {
+                return;
+            }
             if (s.Contains("-"))
             {
                 textBoxDisplay.Text = s.Substring(1);
