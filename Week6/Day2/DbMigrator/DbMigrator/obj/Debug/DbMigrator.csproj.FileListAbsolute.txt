@@ -1,0 +1,7 @@
+C:\Users\Christopher\myFirstRepo\Week6\Day2\DbMigrator\DbMigrator\bin\Debug\DbMigrator.exe.config
+C:\Users\Christopher\myFirstRepo\Week6\Day2\DbMigrator\DbMigrator\bin\Debug\DbMigrator.exe
+C:\Users\Christopher\myFirstRepo\Week6\Day2\DbMigrator\DbMigrator\bin\Debug\DbMigrator.pdb
+C:\Users\Christopher\myFirstRepo\Week6\Day2\DbMigrator\DbMigrator\obj\Debug\DbMigrator.csprojAssemblyReference.cache
+C:\Users\Christopher\myFirstRepo\Week6\Day2\DbMigrator\DbMigrator\obj\Debug\DbMigrator.csproj.CoreCompileInputs.cache
+C:\Users\Christopher\myFirstRepo\Week6\Day2\DbMigrator\DbMigrator\obj\Debug\DbMigrator.exe
+C:\Users\Christopher\myFirstRepo\Week6\Day2\DbMigrator\DbMigrator\obj\Debug\DbMigrator.pdb

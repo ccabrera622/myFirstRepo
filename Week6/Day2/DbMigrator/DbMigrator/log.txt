@@ -1,0 +1,7 @@
+INFO: Migrating started at 9/22/2020 11:35:26 AM
+ERROR: Error occured process terminating.
+INFO: Migrating ended at 9/22/2020 11:35:26 AM
+INFO: Migrating started at 9/22/2020 11:50:08 AM
+ERROR: Error occured process terminating.
+INFO: Migrating ended at 9/22/2020 11:50:08 AM
+

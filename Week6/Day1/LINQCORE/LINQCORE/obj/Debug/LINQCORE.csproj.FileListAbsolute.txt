@@ -1,0 +1,7 @@
+C:\Users\Christopher\myFirstRepo\Week6\Day1\LINQCORE\LINQCORE\obj\Debug\LINQCORE.csprojAssemblyReference.cache
+C:\Users\Christopher\myFirstRepo\Week6\Day1\LINQCORE\LINQCORE\obj\Debug\LINQCORE.csproj.CoreCompileInputs.cache
+C:\Users\Christopher\myFirstRepo\Week6\Day1\LINQCORE\LINQCORE\bin\Debug\LINQCORE.exe.config
+C:\Users\Christopher\myFirstRepo\Week6\Day1\LINQCORE\LINQCORE\bin\Debug\LINQCORE.exe
+C:\Users\Christopher\myFirstRepo\Week6\Day1\LINQCORE\LINQCORE\bin\Debug\LINQCORE.pdb
+C:\Users\Christopher\myFirstRepo\Week6\Day1\LINQCORE\LINQCORE\obj\Debug\LINQCORE.exe
+C:\Users\Christopher\myFirstRepo\Week6\Day1\LINQCORE\LINQCORE\obj\Debug\LINQCORE.pdb
